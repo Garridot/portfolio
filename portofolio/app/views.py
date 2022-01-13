@@ -21,7 +21,7 @@ def EmailSend(request):
         [EMAIL_HOST_USER,],        
     )
     messages.success(request,'Gracias! Tratare de responder lo mas rapido que sea posible. ')
-    return redirect('http://127.0.0.1:8000/#contact')
+    return redirect('https://garrido-portfolio.herokuapp.com/#contact')
     
 
 
