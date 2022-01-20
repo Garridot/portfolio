@@ -10,18 +10,18 @@ class MainView(TemplateView):
     template_name = "main.html"
 
 
-def EmailSend(request):
-    email   = request.POST['email']    
-    message = request.POST['message']   
+# def EmailSend(request):
+#     email   = request.POST['email']    
+#     message = request.POST['message']   
 
-    send_mail(
-        f'Portfolio Message:{email}',
-        message,
-        email,
-        [EMAIL_HOST_USER,],        
-    )
-    messages.success(request,'Gracias! Tratare de responder lo mas rapido que sea posible. ')
-    return redirect('https://garrido-portfolio.herokuapp.com/#contact')
+#     send_mail(
+#         f'Portfolio Message:{email}',
+#         message,
+#         email,
+#         [EMAIL_HOST_USER,],        
+#     )
+#     messages.success(request,'Gracias! Tratare de responder lo mas rapido que sea posible. ')
+#     return redirect('https://garrido-portfolio.herokuapp.com/#contact')
     
 
 
