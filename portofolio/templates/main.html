@@ -53,7 +53,7 @@
             <div class="pres">
                 <p>Hola, soy</p>
                 <h1>Tomas Garrido</h1>
-                <p>• Backend Developer •</p>
+                <p>• Junior Python Developer  •</p>
                 <a href="#projects">Ver Projectos</a>                
             </div> 
             <ul class="nav justify-content-center">
@@ -64,12 +64,13 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/tomas-garrido-82456b1b5/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="nav-link" href="mailto:garridot210@gmail.com" target="_blank"> <i class="far fa-envelope"></i> </a>
                 </li>            
             </ul> 
                            
-        </main>   
+        </main>           
         <section class="about me"  data-aos="zoom-in" data-aos-duration="1000" id="about me">
+            
             <div class="title">
                 <h2>Sobre Me</h2>
             </div>
@@ -78,9 +79,7 @@
                     <p>
                         Hola! soy <strong>Tomas Garrido, Backend Developer.</strong>
                         <br> 
-                        Empecé a estudiar de forma autodidacta Desarrollo Web enfocado en <strong>Django-Python.</strong> Gracias a ello
-                        he sido siempre abierto a la retroalimentación y a la búsqueda de la mejor comunicación posible con otros programadores con otros programadores, para mejorar mis proyectos
-                        Hoy, busco formar parte de proyectos que me desafíen y que me permitan desarrollarme como <strong>programador.</strong> 
+                        Comencé a aprender desarrollo web por mi cuenta especializado en <strong>Django-python,</strong> construyendo proyectos personales, tomando cursos y consultando con otros desarrolladores.
                     </p>
                     <p id="skills" style="padding: 2rem 0 1rem 0;"><strong>Tecnologías con las que he estado trabajando recientemente</strong></p>
                     <ul>
@@ -91,11 +90,14 @@
                     <ul>
                         <h4 style="padding: 0 0 1rem;">Backend</h4>   
                         <li><h5><i class="fab fa-python"></i> Python</h5></li>
-                        <li><h5><img src="{% static 'django.png' %}" width="20px" > Dajngo</h5></li>
+                        <li><h5><img src="{% static 'django.png' %}" width="20px" style="filter: opacity(0.72);" > Dajngo</h5></li>
                         <li><h5><i class="fas fa-database"></i> SQL</h5></li>
                     </ul>
-                </div>                                
-            </div>
+                </div> 
+                <div class="img" style="width: 400px;">
+                    <img src="{% static 'Remini20211204191632791-01_2.jpeg' %}"  class="img-fluid" alt="">
+                </div>                                               
+            </div>           
             
         </section>
         <section class="projects" id="projects" data-aos="zoom-in" data-aos-duration="1000">
@@ -152,7 +154,33 @@
                     
                     
                 </div>                
-            </div>            
+            </div> 
+             
+            <div class="project" data-aos="fade-right"   data-aos-duration="1000">
+                <div class="text">
+                    <h3>Compare Difference</h3>
+                    <p>
+                        Compare el texto para encontrar la diferencia entre dos archivos de texto, o introduzca dos archivos y la diferencia aparecerá a continuación.
+                    </p>
+                    <ul class="tech-list">
+                        <li>Django Rest</li>
+                        <li>Redis</li>
+                        <li>Pandas</li>
+                        <li>BeautifulSoup4</li>
+                        
+                    </ul>
+                    <ul class="project-links">
+                        <li><a href="https://github.com/Garridot/compare-difference" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://compare-difference.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="img">
+                    <a href="https://compare-difference.herokuapp.com/" target="_blank">
+                        <img src="{% static 'compare-difference.png'%}" alt="">
+                    </a>
+                </div>
+            </div>       
         </section>
         <section class="contact" style="padding: 0 0 2rem 0;"  id="contact" data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
@@ -188,7 +216,7 @@
                 <li><a href="mailto:garridot210@gmail.com" target="_blank"> <i class="far fa-envelope"></i> Email</a> </li>
                 <li><a href="https://www.linkedin.com/in/tomas-garrido-82456b1b5/" target="_blank"> <i class="fab fa-linkedin-in"></i> Linkedin</a> </li>
                 <li><a href="https://github.com/Garridot/" target="_blank"> <i class="fab fa-github"></i> Github</a> </li>
-                <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a> </li>
+                
             </ul>
         </footer>
     </div>    
