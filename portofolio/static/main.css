@@ -1,7 +1,7 @@
 
 :root{    
     --grey: rgb(63, 63, 63);      
-    --pink : rgb(242, 222, 223);
+    --pink : #f9c4ba;
     --black: rgb(36, 36, 38);    
     --white:rgb(247, 247, 247);
     --text-color:rgb(69, 69, 69);
@@ -189,7 +189,7 @@ main{
     position: relative;
     margin: auto;
     height: 678px;
-    background: #f6e8ea;
+    background: var(--pink);
 
     
 }
@@ -197,11 +197,11 @@ main{
 main .pres
 { 
     text-align: center;
-    margin: auto;
-    margin-top: 2rem;
+    margin: auto;    
     width: 50%;
     background: var(--white);
-    padding: 1rem 0;
+    padding: 2rem 0 0.5rem;
+    margin-top: 5.5rem;
 }
 
 
@@ -264,30 +264,8 @@ main ul.nav a:hover{
     
 }
  
-.lines,
-.lines2
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.lines span,
-.lines2 span
-{
-    
-    top: 15rem;
-    width: 25px;
-    height: 100px;    
-    background: var(--pink);       
-    transform: rotate(calc(180deg * var(--i)));
-    
-}
 
-.lines span:nth-child(1){
-    background-color: var(--text-color);    
-}
 
 
 @media (max-width:1000px){
@@ -382,12 +360,15 @@ section.about.me .info{
     
     padding: .5rem;
 }
-
-@media (max-width:750px){
+@media (max-width:1000px){
+    .img{
+        display: none;
+    }
     .info .text{
         width: 100%;        
     } 
 }
+
 
 
 /** CONTACT SECTION **/
@@ -619,7 +600,19 @@ section.projects .img img{
         text-align: start;
     }
 }
-   
+
+#certi{
+    text-align: justify;
+}
+
+.certi_a{
+    text-decoration: underline var(--grey);
+    
+    margin: 1rem 0;
+}
+.certi_a h5{
+    margin: 2rem 0;
+}
 
 
 /****  FOOTER  ****/
